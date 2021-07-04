@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>กรมโยธาและผังเมือง</title>
+  
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@200&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Niramit:wght@200&display=swap" rel="stylesheet">
+
+  <!-- icon -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+  <!-- header -->
+  <header>
+    <div class="container">
+      <div class="header-container">
+        <span class="account">บัญชีของ</span>
+        <span class="name">คุณจักรพงษ์</span>
+        <a href="#">ออกจากระบบ</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- nav -->
+  <nav>
+    <div class="container">
+      <div class="nav-grid">
+        <div class="bran">
+          <img src="img/bran.png" width="78" height="78" alt="">
+        </div>
+        <div class="bran-name">
+          <h4>กรมโยธาและผังเมือง</h4>
+          <p>Department of Public Works <br> and Town & Country Planning </p>
+        </div>
+        <ul class="menu-bar">
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">แนะนำกรม</a>
+            <div class="dropdown-content">
+              <a href="#">แนะนำกรม 1</a>
+              <a href="#">แนะนำกรม 2</a>
+              <a href="#">แนะนำกรม 3</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">หน่วยงานในสังกัดกรม</a>
+            <div class="dropdown-content">
+              <a href="#">หน่วยงานในสังกัดกรม 1</a>
+              <a href="#">หน่วยงานในสังกัดกรม 2</a>
+              <a href="#">หน่วยงานในสังกัดกรม 3</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">หน่วยงานในมท.</a>
+            <div class="dropdown-content">
+              <a href="#">หน่วยงานในมท. 1</a>
+              <a href="#">หน่วยงานในมท. 2</a>
+              <a href="#">หน่วยงานในมท. 3</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">ศูนย์ข้อมูล</a>
+            <div class="dropdown-content">
+              <a href="#">ศูนย์ข้อมูล 1</a>
+              <a href="#">ศูนย์ข้อมูล 2</a>
+              <a href="#">ศูนย์ข้อมูล 3</a>
+            </div>
+          </li>
+          <li><a href="#">ติดต่อสื่อสาร</a></li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">
+              <img src="img/thai.png" width="32" height="28" alt=""> ภาษาไทย 
+              <i class="fa fa-angle-down" aria-hidden="true"></i>
+            </a>
+            <div class="dropdown-content">
+              <a href="#"><img src="img/thai.png" width="32" height="28" alt=""> ภาษาไทย</a>
+              <a href="#"><img src="img/eng.png" width="32" height="28" alt=""> ภาษาอังกฤษ</a>
+            </div>
+          </li>
+          <div id="myOverlay" class="overlay">
+            <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+            <div class="overlay-content">
+              <form action="/action_page.php">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </form>
+            </div>
+          </div>
+          
+          <button class="openBtn" onclick="openSearch()"><i class="fa fa-search" aria-hidden="true"></i></button>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="content">
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <img src="img/photo1.jpg" style="width:100%">
+        <div class="text">Caption Text</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <img src="img/photo2.jpg" style="width:100%">
+        <div class="text">Caption Two</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <img src="img/photo3.jpg" style="width:100%">
+        <div class="text">Caption Three</div>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="img/photo4.jpg" style="width:100%">
+        <div class="text">Caption Four</div>
+      </div>
+      
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+      </div>
+      <br>
+      
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+      </div>
+    
+    <div class="container">
+      <div class="grid-items">
+        <div class="content-item">
+          <h2>๑.</h2>
+          <p>การบริหารประชาชน</p>
+        </div>
+        <div class="content-item">
+          <h2>๒.</h2>
+          <p>ข่าวสารประชาสัมพันธ์</p>
+        </div>
+        <div class="content-item">
+          <h2>๓.</h2>
+          <p>กฏหมายแบบฟอร์ม</p>
+        </div>
+        <div class="content-item">
+          <h2>๔.</h2>
+          <p>เผยแพร่ความรู้</p>
+        </div>
+        <div class="content-item">
+          <h2>๕.</h2>
+          <p>ติดต่อสอบถาม</p>
+        </div>
+        <div class="content-item">
+          <h2>๖.</h2>
+          <p>แผนงาน/รายงานผล</p>
+        </div>
+      </div>
+    </div>
+
+    <hr class="content">
+    <div class="content-heading">
+      <h1>ข้</h1>
+      <span>อข้อข่าวสารประชาสัมพันธ์</span>
+      <p>กรมโยธาธิการและผังเมืองพร้อมให้ข้อมูลข่าวสารที่เป็นประโยชน์ สำหรับคุณ</p>
+    </div>
+
+    <div class="container">
+
+      <ul class="grid-menu">
+        <li><a href="#">ข่าวกิจกรรม</a></li>
+        <li><a href="#">ข่าวประชาสัมพันธ์</a></li>
+        <li><a href="#">ข่าวตัดจากหนังสือพิมพ์</a></li>
+        <li><a href="#">ข่าวกรม</a></li>
+        <li><a href="#">วารสารกรมฯ</a></li>
+        <li><a href="#">คลังข่าวมหาดไทย</a></li>
+      </ul>
+
+      <div class="grid-content">
+        <div class="card">
+          <div class="image">
+            <img src="img/photo1.jpg" alt="">
+          </div>
+          <div class="icon">
+            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          </div>
+          <div class="news">
+            <p>ข่าวประชาสัมพันธ์</p>
+            <p>ที่ดิน</p>
+          </div>
+          <div class="detail">
+            <h3>การจำหน่ายที่ดินจัดหาประโยชน์ใน <br> โครงการจัดรูปที่ดินเพื่อพัฒนาพื้นที่</h3>
+            <span class="date">19 กุมภาพันธ์ 2564</span> 
+            <span class="text">การจำหน่ายที่ดินจัดหาประโยชน์ในโครงการจัดรูป <br> ที่ดินเพื่อพัฒนาพื้นที่บบริเวณชุมชนหนองหลวงพัฒนา อำเภอเมืองชัยนาท จังหวัดชัยนาท</span>
+            <b>อ่านเพิ่มเติม</b>
+          </div>
+        </div>
+        <div class="card">
+          <div class="image">
+            <img src="img/photo1.jpg" alt="">
+          </div>
+          <div class="icon">
+            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          </div>
+          <div class="news">
+            <p>ข่าวประชาสัมพันธ์</p>
+            <p>ที่ดิน</p>
+          </div>
+          <div class="detail">
+            <h3>การจำหน่ายที่ดินจัดหาประโยชน์ใน <br> โครงการจัดรูปที่ดินเพื่อพัฒนาพื้นที่</h3>
+            <span class="date">19 กุมภาพันธ์ 2564</span> 
+            <span class="text">การจำหน่ายที่ดินจัดหาประโยชน์ในโครงการจัดรูป <br> ที่ดินเพื่อพัฒนาพื้นที่บบริเวณชุมชนหนองหลวงพัฒนา อำเภอเมืองชัยนาท จังหวัดชัยนาท</span>
+            <b>อ่านเพิ่มเติม</b>
+          </div>
+        </div>
+        <div class="card">
+          <div class="image">
+            <img src="img/photo1.jpg" alt="">
+          </div>
+          <div class="icon">
+            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          </div>
+          <div class="news">
+            <p>ข่าวประชาสัมพันธ์</p>
+            <p>ที่ดิน</p>
+          </div>
+          <div class="detail">
+            <h3>การจำหน่ายที่ดินจัดหาประโยชน์ใน <br> โครงการจัดรูปที่ดินเพื่อพัฒนาพื้นที่</h3>
+            <span class="date">19 กุมภาพันธ์ 2564</span> 
+            <span class="text">การจำหน่ายที่ดินจัดหาประโยชน์ในโครงการจัดรูป <br> ที่ดินเพื่อพัฒนาพื้นที่บบริเวณชุมชนหนองหลวงพัฒนา อำเภอเมืองชัยนาท จังหวัดชัยนาท</span>
+            <b>อ่านเพิ่มเติม</b>
+          </div>
+        </div>
+        <div class="card">
+          <div class="image">
+            <img src="img/photo1.jpg" alt="">
+          </div>
+          <div class="icon">
+            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          </div>
+          <div class="news">
+            <p>ข่าวประชาสัมพันธ์</p>
+            <p>ที่ดิน</p>
+          </div>
+          <div class="detail">
+            <h3>การจำหน่ายที่ดินจัดหาประโยชน์ใน <br> โครงการจัดรูปที่ดินเพื่อพัฒนาพื้นที่</h3>
+            <span class="date">19 กุมภาพันธ์ 2564</span> 
+            <span class="text">การจำหน่ายที่ดินจัดหาประโยชน์ในโครงการจัดรูป <br> ที่ดินเพื่อพัฒนาพื้นที่บบริเวณชุมชนหนองหลวงพัฒนา อำเภอเมืองชัยนาท จังหวัดชัยนาท</span>
+            <b>อ่านเพิ่มเติม</b>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="content-main"> 
+      <h1>เราทำความ ดี ด้วยหัวใจ</h1>
+      <span>เพื่อชุมชนและสังคม พัฒนาด้านแหล่งน้ำและปรับภูมิทัศน์</span>
+    </div>
+
+  </section>
+  
+  <main>
+
+    <aside>
+      <div class="container">
+        <div class="list-menu">
+          <ul class="link-menu">
+              <li><a href="#">จัดซื้อจัดจ้าง (RSS บัญชีกลาง)</a></li>
+              <li><a href="#">จัดซื้อจัดจ้าง กรมโยธาและผังเมือง</a></li>
+          </ul>
+          <div class="block-items">
+              <div class="date-item">
+                  <h1>12</h1>
+                  <p>มี.ค.</p>
+              </div>
+              <div class="contents-item">
+                  <h5>การจัดประชุมเชิงปฏิบัติการระดับกลุ่มจังหวัด</h5>
+                  <p>และประชุมกลุ่มย่อยระดับกลุ่มจังหวัด การวางผังภาคตะวันออก และการวางผังภาคใต้</p>
+              </div>
+              <div class="icon-item">
+                <img src="img/pdf2.png" width="28" height="28">
+                <h6>ดาวโหลด</h6>
+                <p>(115 Kb.)</p>
+              </div>
+          </div>
+          <div class="block-items">
+            <div class="date-item">
+                <h1>12</h1>
+                <p>มี.ค.</p>
+            </div>
+            <div class="contents-item">
+                <h5>การจัดประชุมเชิงปฏิบัติการระดับกลุ่มจังหวัด</h5>
+                <p>และประชุมกลุ่มย่อยระดับกลุ่มจังหวัด การวางผังภาคตะวันออก และการวางผังภาคใต้</p>
+            </div>
+            <div class="icon-item">
+              <img src="img/pdf2.png" width="28" height="28">
+              <h6>ดาวโหลด</h6>
+              <p>(115 Kb.)</p>
+            </div>
+          </div>
+          <div class="block-items">
+            <div class="date-item">
+                <h1>12</h1>
+                <p>มี.ค.</p>
+            </div>
+            <div class="contents-item">
+                <h5>การจัดประชุมเชิงปฏิบัติการระดับกลุ่มจังหวัด</h5>
+                <p>และประชุมกลุ่มย่อยระดับกลุ่มจังหวัด การวางผังภาคตะวันออก และการวางผังภาคใต้</p>
+            </div>
+            <div class="icon-item">
+              <img src="img/pdf2.png" width="28" height="28">
+              <h6>ดาวโหลด</h6>
+              <p>(115 Kb.)</p>
+            </div>
+          </div>
+          <div class="block-items">
+            <div class="date-item">
+                <h1>12</h1>
+                <p>มี.ค.</p>
+            </div>
+            <div class="contents-item">
+                <h5>การจัดประชุมเชิงปฏิบัติการระดับกลุ่มจังหวัด</h5>
+                <p>และประชุมกลุ่มย่อยระดับกลุ่มจังหวัด การวางผังภาคตะวันออก และการวางผังภาคใต้</p>
+            </div>
+            <div class="icon-item">
+              <img src="img/pdf2.png" width="28" height="28">
+              <h6>ดาวโหลด</h6>
+              <p>(115 Kb.)</p>
+            </div>
+          </div>
+          <div class="block-items">
+            <div class="date-item">
+                <h1>12</h1>
+                <p>มี.ค.</p>
+            </div>
+            <div class="contents-item">
+                <h5>การจัดประชุมเชิงปฏิบัติการระดับกลุ่มจังหวัด</h5>
+                <p>และประชุมกลุ่มย่อยระดับกลุ่มจังหวัด การวางผังภาคตะวันออก และการวางผังภาคใต้</p>
+            </div>
+            <div class="icon-item">
+              <img src="img/pdf2.png" width="28" height="28">
+              <h6>ดาวโหลด</h6>
+              <p>(115 Kb.)</p>
+            </div>
+          </div>
+          <div class="block-items">
+            <div class="date-item">
+                <h1>12</h1>
+                <p>มี.ค.</p>
+            </div>
+            <div class="contents-item">
+                <h5>การจัดประชุมเชิงปฏิบัติการระดับกลุ่มจังหวัด</h5>
+                <p>และประชุมกลุ่มย่อยระดับกลุ่มจังหวัด การวางผังภาคตะวันออก และการวางผังภาคใต้</p>
+            </div>
+            <div class="icon-item">
+              <img src="img/pdf2.png" width="28" height="28">
+              <h6>ดาวโหลด</h6>
+              <p>(115 Kb.)</p>
+            </div>
+          </div>
+          <div class="block-items">
+            <div class="date-item">
+                <h1>12</h1>
+                <p>มี.ค.</p>
+            </div>
+            <div class="contents-item">
+                <h5>การจัดประชุมเชิงปฏิบัติการระดับกลุ่มจังหวัด</h5>
+                <p>และประชุมกลุ่มย่อยระดับกลุ่มจังหวัด การวางผังภาคตะวันออก และการวางผังภาคใต้</p>
+            </div>
+            <div class="icon-item">
+              <img src="img/pdf2.png" width="28" height="28">
+              <h6>ดาวโหลด</h6>
+              <p>(115 Kb.)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <article>
+      <div class="container">
+        <div class="block">
+          <div class="block-items">
+            <div class="block-item">
+              <p>กรมโยธาธิการและผังเมือง</p>
+              <h3>ปิดประกาศ</h3>
+              <i class="fa fa-linode" aria-hidden="true"></i>
+              <h1>60</h1>
+              <h4>วัน</h4>
+            </div>
+            <div class="block-item">
+              <p>กรมโยธาธิการและผังเมือง</p>
+              <h3>ปิดประกาศ</h3>
+              <i class="fa fa-ravelry" aria-hidden="true"></i>
+              <h1>15</h1>
+              <h4>วัน</h4>
+            </div>
+            <div class="block-item big">
+              <p>กรมโยธาธิการและผังเมือง</p>
+              <h3>ปิดประกาศ</h3>
+              <h1>90</h1>
+              <h4>วัน</h4>
+              <i class="fa fa-bookmark-o" aria-hidden="true"></i>
+            </div>
+          </div>
+          <div class="video-content">
+              <div class="block-video">
+                  <span>ชวนดูวิดีโอ</span>
+              </div>
+              <div class="video">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/EoIS9-fC8ek" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <h1>ละครซิทคอมลูกทุ่ง "โยธาธิการและผังเมืองมาแล้ว" <br> ตอนที่ 2 รู้จักโซนสี(ผังเมือง)...ก่อนดีไหม</h1><br>
+                  <p>ละครซิทคอมลูกทุ่ง "โยธาธิการและผังเมืองมาแล้ว" ตอนที่ 2 รู้จักโซนสี(ผังเมือง)... <br> ก่อนดีไหม</p>
+              </div>
+          </div>
+        </div>
+      </div>
+
+    </article>
+
+  </main>
+  
+  <section class="block-content">
+    <ul class="ิblock-menu">
+      <li><a href="#">หน่วยงานภายใน</a></li>
+      <li><a href="#">หน่วยงานภายนอก</a></li>
+    </ul>
+
+    <div class="last-items">
+      <div class="content">
+        <h1>มาตรฐานการให้ริการ</h1>
+        <span>กรมโยธาและผังเมือง</span>
+      </div>
+      <div class="content">
+        <h1>กฎหมายของกรมโยธาธิการและผังเมือง</h1>
+        <span>กับการเข้าสู่ประชาคมอาเซียน</span>
+      </div>
+      <div class="content">
+        <h1>ระเบียบกรมโยธาธิการและผังเมืองว่าด้วยการ</h1>
+        <span>ให้บริการวิเคราะห์วิจัยและทดสอบวัสดุ</span>
+      </div>
+      <div class="content">
+        <h1>การบริการฐานข้อมูลดิจิตัล</h1>
+        <span>ด้านผังเมือง</span>
+      </div>
+      <div class="content">
+        <h1>ประกาศรับสมัครงาน</h1>
+        <span>กรมโยธาและผังเมือง</span>
+      </div>
+      <div class="content">
+        <h1>การจัดการความรุ้</h1>
+        <span>กรมโยธาและผังเมือง</span>
+      </div>
+    </div>
+    
+    <div class="container">
+      <div class="link-item">
+        <div class="container">
+            <div class="link-items">
+                <div class="link">
+                    <ul>
+                        <li class="list">หน่วยงานในสังกัดกรม</li>
+                        <li><a href="#">ส่วนกลาง</a></li>
+                        <li><a href="#">ส่วนูมิภาค</a></li>
+                    </ul><br>
+                    <ul>
+                        <li class="list">ศูนย์ข้อมูล</li>
+                        <li><a href="#">ศูนย์ประสานงานแก้ไขปัญหา ผักตชวา</a></li>
+                        <li><a href="#">ศูนย์ข้อมูลข่าวสารกรมฯ</a></li>
+                        <li><a href="#">ศูนย์ปฏิบัติการกรมโยธาธิการและผังเมือง</a></li>
+                        <li><a href="#">การประเมินคุณธรรมและความโปร่งใส</a></li>
+                    </ul><br>
+                    <ul>
+                        <li class="list">ติดต่อสอบถาม</li>
+                        <li><a href="#">ปรึกษากฏหมาย</a></li>
+                        <li><a href="#">ปรึกษาการตรวจสอบโรงมหรสพ</a></li>
+                        <li><a href="#">ร้องเรียนศูนย์ดำรงธรรม</a></li>
+                        <li><a href="#">แจ้งเบาะแส</a></li>
+                        <li><a href="#">รับฟังความคิดเห็น</a></li>
+                        <li><a href="#">แบบสำรวจความคิดเห็น</a></li>
+                        <li><a href="#">แบบสอบถามรับฟังคิดเห็น</a></li>
+                        <li><a href="#">สมุดเยี่ยม</a>
+                        <li><a href="#">Webboard</a>
+                    </ul><br>
+                </div>
+                <div class="link">
+                    <ul class="ul4">
+                        <li class="list">Service (การบริการประชาชน)</li>
+                        <li><a href="#">บริการข้อมูลผังเมือง</a></li>
+                        <li><a href="#">แบบแปลนก่อสร้าง</a></li>
+                        <li><a href="#">จัดซื้อจัดจ้าง</a></li>
+                        <li><a href="#">ฐานข้อมูล</a></li>
+                        <li><a href="#">ประกาศรับสมัครงาน</a></li>
+                        <li><a href="#">บัญชีรายละเอียดการบรรจุบุคคลเข้ารับราชการ</a></li>
+                        <li><a href="#">ประกาศผังเมืองรวม</a></li>
+                        <li><a href="#">ปิดประกาศ 90, 30 และ 15 วัน</a>
+                        <li><a href="#">DPT RSS Feed</a>
+                    </ul><br>
+                    <ul>
+                        <li class="list">กฏหมาย/แบบฟอร์ม</li>
+                        <li><a href="#">กฏหมายด้านโยธาธิการและผังเมือง</a></li>
+                        <li><a href="#">แบบฟอร์มเอกสารราชการ</a></li>
+                    </ul><br>
+                    <ul>
+                        <li class="list">สำหรับเจ้าหน้าที่</li>
+                        <li><a href="#">จดหมายอิเล็กทรอนิกส์ Mail.go.th</a></li>
+                        <li><a href="#">ระบเครือข่ายภายในกรมฯ</a></li>
+                    </ul><br>
+                    <ul>
+                        <li class="list">แผนงาน/รายงานผล</li>
+                        <li><a href="#">รายงานผล</a></li>
+                        <li><a href="#">แผนงาน</a></li>
+                    </ul><br>
+                </div>
+                <div class="link">
+                    <ul>
+                        <li class="list">เผยแพร่ความรู้</li>
+                        <li><a href="#">เผยแพร่ข้อมูลโครงการ</a></li>
+                        <li><a href="#">มาตรฐานกรมโยธาธิการและผังเมือง</a></li>
+                        <li><a href="#">e-Document (ข้อมูลเผยแพร่)</a></li>
+                        <li><a href="#">e-VDO (ไฟล์วิดิโอ)</a></li>
+                        <li><a href="#">etc. (เกร็ดเล็กเกร็ดน้อย)</a></li>
+                        <li><a href="#">KM การจัดการความรู้</a></li>
+                        <li><a href="#">FAQ (ถามบ่อย)</a>
+                        <li><a href="#">ความรู้ด้านโยธาธิการและผังเมือง (Infographic)</a>
+                        <li><a href="#">แบนเนอร์หน่วยงาน</a>
+                    </ul><br>
+                    <ul  class="ul8">
+                        <li class="list">ข้อมูลข่าวสารประชาสัมพันธ์</li>
+                        <li><a href="#">ข่าวกิจกรรม</a></li>
+                        <li><a href="#">ข่าวประชาสัมพันธ์</a></li>
+                        <li><a href="#">ข่าวตัดจากหนังสือพิมพ์</a></li>
+                        <li><a href="#">ข่าวกรม</a></li>
+                        <li><a href="#">วารสารกรมฯ</a></li>
+                        <li><a href="#">คลังข่าวมหาดไทย</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+  
+  <footer>
+    <div class="container">
+      <div class="tag">แผนผังเว็บไซต์ <i class="fa fa-angle-up" aria-hidden="true"></i></div>
+      <div class="footer-items">
+          <div class="contact-item">
+              <h1>กรมโยธาธิการและผังเมือง กระทรวงมหาดไทย</h1>
+              <span>224 ถนนพระราม 9 แขวงห้วยขวาง เขตห้วยขวาง กรุงเทพฯ 10320</span>
+              <div class="app">
+                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+              </div>
+          </div>
+          <div class="contact-item">
+              <i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+              <span>โทรศัพท์</span><p class="n1">0 220 7 3599</p><br><br>
+              <i class="fa fa-print" aria-hidden="true"></i>
+              <span>โทรสาร</span><p class="n2">0 220 7 3506</p><br><br>
+              <i class="fa fa-envelope-o" aria-hidden="true"></i>
+              <span>อีเมล</span><p class="n3">support@erc.ac.th</p><br>
+              <i class="fa fa-headphones" aria-hidden="true"></i>
+              <span>หน่วยงาน บริการ</span><p class="n4">1204</p>
+          </div>
+          <div class="contact-item">
+              <span>การปฏิเสธความรับผิด (Oisclaimer)</span>
+              <span>นโยบายเว็บไซต์ (Website Policy)</span>
+              <span>นโยบายการคุ้มครองข้อมูลส่วนบุคคล (Privacy Policy)</span>
+              <span>นโยบายการรักษาความมั่นคงปลอดภัยของเว็บไซต์ <br> (Website Security Policy)</span>
+          </div>
+      </div>
+    </div>
+  
+    <div class="container">
+      <hr class="end">
+        <div class="number">
+            <p>สงวนลิขสิทธ์ © 2564 โดย กรมโยธาธิการและผังเมือง กระทรวงมหาดไทย</p>
+            <div class="nb">
+                <h1>3 8 4 6 7 1 2</h1>
+                <p>จำนวนผู้เยี่ยมชมเว็บ</p>
+            </div>
+        </div>
+    </div>
+  </footer>
+  
+  
+  <script src="scrip.js"></script>
+
+</body>
+</html>

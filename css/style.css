@@ -42,7 +42,7 @@ nav {
 
 .nav-grid {
   display: grid;
-  grid-template-columns: 84px 297px 1069px;
+  grid-template-columns: 84px 297px 1000px;
 }
 .bran img {
   margin-top: 7px;

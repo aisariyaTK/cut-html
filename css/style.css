@@ -512,6 +512,12 @@ hr.content {
   backface-visibility: hidden;
 }
 
+.image img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .middle {
   transition: .5s ease;
   opacity: 0;
@@ -566,4 +572,49 @@ hr.content {
 b {
   display: inline-block;
   margin-top: 10px;
+}
+
+.blockSlide {
+  display: none
+}
+.grid-content {
+  vertical-align: middle;
+}
+
+.blockshow {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.dots {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dots:hover {
+  background-color: #717171;
+}
+
+.fade1 {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade1 {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade1 {
+  from {opacity: .4} 
+  to {opacity: 1}
 }

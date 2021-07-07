@@ -502,6 +502,8 @@ hr.content {
 
 .card {
   position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  height: 500px;
 }
 
 .card.image {
@@ -543,7 +545,7 @@ hr.content {
   margin-left: 20px;
 }
 .news span {
-  padding: 5px;
+  padding: 5px 10px;
   background-color: #363635;
   border: 1px solid #363635;
   border-radius: 20px;
@@ -596,6 +598,11 @@ b {
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
+}
+
+i.fa-angle-left, i.fa-angle-right {
+  font-size: 25px;
+  cursor: pointer;
 }
 
 .active, .dots:hover {

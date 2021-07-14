@@ -680,8 +680,8 @@ main {
 
 .list-menu {
   width: 550px;
-  height: 900px;
-  margin-left: 150px;
+  height: auto;
+  margin-left: 100px;
 }
 .link-menu {
   display: grid;
@@ -750,4 +750,10 @@ main {
 
 .block-items:hover {
   border: 5px solid #ffd000;
+}
+
+.block {
+  width: 550px;
+  height: auto;
+  margin-left: 70px;
 }

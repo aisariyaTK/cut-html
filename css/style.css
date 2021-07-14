@@ -5,7 +5,7 @@
 }
 
 .container {
-  max-width: 1280px;
+  max-width: 1160px;
   width: 100%;
   margin: 0 auto; 
 }
@@ -42,7 +42,7 @@ nav {
 
 .nav-grid {
   display: grid;
-  grid-template-columns: 84px 297px 1000px;
+  grid-template-columns: 85px 280px 1fr;
 }
 .bran img {
   margin-top: 7px;
@@ -51,15 +51,16 @@ nav {
 }
 
 .bran-name {
+  font-family: 'Sarabun', sans-serif;
   margin-top: 14px;
 }
 .bran-name h4 {
   color: #4d2224;
-  font-size: 12pt;
+  font-size: 16px;
 }
 .bran-name p {
   color: #232323;
-  font-size: 12pt;
+  font-size: 14px;
   text-transform: uppercase;
 }
 
@@ -73,10 +74,11 @@ li {
 }
 
 li a.link, .dropbtn {
+  font-size: 14px;
   display: inline-block;
   color: #232323;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px 12px;
   text-decoration: none;
 }
 
@@ -98,8 +100,9 @@ li.dropdown {
 }
 
 .dropdown-content a {
+  font-size: 14px;
   color: black;
-  padding: 12px 16px;
+  padding: 14px 16px;
   text-decoration: none;
   display: block;
   text-align: left;
@@ -118,7 +121,6 @@ li.dropdown {
 }
 .dropbtn span {
   position: absolute;
-  /* margin-top: 5px; */
   margin-left: 5px;
 }
 .dropdown-content span {
@@ -148,7 +150,7 @@ li.dropdown {
   padding: 10px 15px;
   font-size: 20px;
   cursor: pointer;
-  margin-left: 100px;
+  margin-left: 110px;
 }
 
 .openBtn:hover {
@@ -267,6 +269,27 @@ form h1 {
 }
 .text p {
   font-size: 20px;
+}
+
+i.fa-universal-access {
+  position: absolute;
+  font-size: 35px;
+  background-color: #ffd000;
+  color: #fff;
+  padding: 14px;
+  right: 0;
+  top: 45%;
+  cursor: pointer;
+}
+i.fa-link {
+  position: absolute;
+  font-size: 35px;
+  background-color: #2e1213;
+  color: #fff;
+  padding: 15px;
+  right: 0;
+  top: 53.8%;
+  cursor: pointer;
 }
 
 /* The dots/bullets/indicators */
@@ -462,6 +485,7 @@ hr.content {
 
 .grid-menu {
   margin-top: 60px;
+  font-family: 'Prompt', sans-serif;
   display: grid;
   grid-template-columns: 160px 180px 200px 98px 138px 166px;
   grid-gap: 2px;
@@ -484,7 +508,7 @@ hr.content {
   margin-top: 40px;
   display: grid;
   grid-template-columns: repeat(4 ,1fr);
-  grid-gap: 30px;
+  grid-gap: 15px;
 }
 
 .middle .fa-facebook {
@@ -503,7 +527,7 @@ hr.content {
 .card {
   position: relative;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  height: 500px;
+  height: 487px;
 }
 
 .card.image {
@@ -564,12 +588,12 @@ hr.content {
 .date {
   display: inline-block;
   padding-top: 30px;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .paragraph {
   margin-top: 10px;
-  font-size: 14px;
+  font-size: 12px;
 }
 b {
   display: inline-block;
@@ -634,7 +658,7 @@ i.fa-angle-left, i.fa-angle-right {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-left: 100px;
+  padding-left: 70px;
   padding-top: 50px;
 }
 .content-main h1 {
@@ -643,7 +667,7 @@ i.fa-angle-left, i.fa-angle-right {
   padding-left: 100px;
 }
 .content-main span {
-  font-size: 36px;
+  font-size: 34px;
 }
 
 main {
@@ -665,22 +689,23 @@ main {
   grid-gap: 2px;
 }
 .link-menu a {
+  font-family: 'Prompt', sans-serif;
   text-decoration: none;
   color: #000;
-  background-color: #ffd000;
   padding: 16px 0;
   text-align: center;
 }
 .link-menu a:hover {
-  color: #fff;
-  background-color: #363635;
+  background-color: #ffd000;
+  
 }
 
 .block-items {
   display: grid;
-  grid-template-columns: 80px 400px 1fr;
+  grid-template-columns: 75px 400px 1fr;
   grid-template-rows: repeat(1, 90px);
   margin-bottom: 2px;
+  cursor: pointer;
 }
 .date-item {
   background-color: #505050;
@@ -703,4 +728,26 @@ main {
 .contents-item p {
   font-size: 14px;
   color: #808080;
+}
+
+.icon-item {
+  background-color: #4d2224;
+  text-align: center;
+}
+.icon-item img {
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 20%;
+  background-color: #ffd000;
+}
+.icon-item h6 {
+  color: #fff;
+}
+.icon-item p {
+  margin-top: 3px;
+  color: #ffd000;
+}
+
+.block-items:hover {
+  border: 5px solid #ffd000;
 }

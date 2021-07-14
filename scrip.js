@@ -10,7 +10,7 @@ function closeSearch() {
 var slideIndex1 = 1;
 showSlides1(slideIndex1);
 
-function plusSlides(n) {
+function plusSlides1(n) {
   showSlides1(slideIndex1 += n);
 }
 

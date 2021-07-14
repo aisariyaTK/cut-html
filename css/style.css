@@ -1047,8 +1047,10 @@ section.block-content {
 }
 .link-items {
   padding-top: 50px;
+  padding-bottom: 50px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
 }
 li.list {
   color: #ffd000;
@@ -1058,10 +1060,123 @@ ul li {
   list-style: none;
 }
 ul li a {
-  display: inline;
   text-decoration: none;
   color: #ffffff;
 }
 ul li a:hover {
   color: #ddd;
+}
+footer {
+  width: 100%;
+  height: auto;
+  background-color: #340e15;
+}
+
+.footer-items {
+  position: relative;
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 300px 1fr;
+  margin-bottom: 30px;
+}
+.tag {
+  position: absolute;
+  color: #fff;
+  right: 4%;
+  top: 658%;
+  transform: translateX(-50%);
+  z-index: 999;
+  padding: 10px 20px;
+  background-color: #26090a
+}
+.contact-item:nth-child(1) h1 {
+  font-family: 'Prompt', sans-serif;
+  color: #ffd000;
+  font-size: 20px;
+}
+.contact-item:nth-child(1) span {
+  font-family: 'Prompt', sans-serif;
+  color: #fff;
+  font-size: 12px;
+}
+.app {
+  margin-top: 20px;
+  font-size: 18px;
+  
+}
+.app .fa-facebook {
+  color: #fff;
+  padding: 6px 10px;
+  border: 3px solid #fff;
+}
+.app .fa-instagram {
+  color: #fff;
+  padding: 6px 7px;
+  border: 3px solid #fff;
+}
+.app .fa-twitter {
+  color: #fff;
+  padding: 6px 6px;
+  border: 3px solid #fff;
+}
+
+i.fa-volume-control-phone, i.fa-print, i.fa-envelope-o, i.fa-headphones {
+  font-size: 20px;
+  color: #fff;
+  padding-right: 10px;
+}
+.contact-item:nth-child(2) span {
+  color: #ffd000;
+  font-size: 12px;
+}
+.contact-item:nth-child(2) p.n1 {
+  display: inline;
+  color: #fff;
+  font-size: 14px;
+  padding-left: 96px;
+}
+.contact-item:nth-child(2) p.n2 {
+  display: inline;
+  color: #fff;
+  font-size: 14px;
+  padding-left: 100px;
+}
+.contact-item:nth-child(2) p.n3 {
+  display: inline;
+  color: #fff;
+  font-size: 14px;
+  padding-left: 110px;
+}
+.contact-item:nth-child(2) p.n4 {
+  display: inline;
+  color: #fff;
+  font-size: 36px;
+  padding-left: 48px;
+}
+.contact-item:nth-child(3) {
+  color: #fff;
+  font-size: 14px;
+  align-self: center;
+}
+p.end {
+  margin-top: 10px;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+}
+.nb {
+  margin: auto;
+  margin-top: 20px;
+  width: 20%;
+  height: auto;
+  text-align: center;
+  background-color: #000;
+}
+.nb h1 {
+  padding-top: 10px;
+  color: #fff;
+}
+.nb p {
+  padding-bottom: 10px;
+  color: #fff;
 }

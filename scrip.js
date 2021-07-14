@@ -21,7 +21,7 @@ function currentSlide1(n) {
 function showSlides1(n) {
   var i;
   var slides1 = document.getElementsByClassName("mySlides");
-  var dots1 = document.getElementsByClassName("dot");
+  var dots1 = document.getElementsByClassName("dot1");
   if (n > slides1.length) {slideIndex1 = 1}    
   if (n < 1) {slideIndex1 = slides1.length}
   for (i = 0; i < slides1.length; i++) {
@@ -51,7 +51,7 @@ function currentSlide2(m) {
 function showSlides2(m) {
   var j;
   var slides2 = document.getElementsByClassName("blockSlide");
-  var dots2 = document.getElementsByClassName("dots");
+  var dots2 = document.getElementsByClassName("dot2");
   if (m > slides2.length) {slideIndex2 = 1}    
   if (m < 1) {slideIndex2 = slides2.length}
   for (j = 0; j < slides2.length; j++) {
@@ -78,7 +78,7 @@ function currentSlide3(o) {
 function showSlides3(o) {
   var k;
   var slides3 = document.getElementsByClassName("video");
-  var dots3 = document.getElementsByClassName("dots");
+  var dots3 = document.getElementsByClassName("dot3");
   if (o > slides3.length) {slideIndex3 = 1}    
   if (o < 1) {slideIndex3 = slides3.length}
   for (k = 0; k < slides3.length; k++) {

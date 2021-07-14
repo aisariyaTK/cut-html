@@ -1067,13 +1067,13 @@ ul li a:hover {
   color: #ddd;
 }
 footer {
+  position: relative;
   width: 100%;
   height: auto;
   background-color: #340e15;
 }
 
 .footer-items {
-  position: relative;
   padding-top: 20px;
   display: grid;
   grid-template-columns: 1fr 300px 1fr;
@@ -1081,13 +1081,15 @@ footer {
 }
 .tag {
   position: absolute;
-  color: #fff;
-  right: 4%;
-  top: 658%;
+  top: -30px;
+  left: 85%;
   transform: translateX(-50%);
   z-index: 999;
+  background: #26090a;
   padding: 10px 20px;
-  background-color: #26090a
+  border-radius: 5px;
+  color: #fff;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
 }
 .contact-item:nth-child(1) h1 {
   font-family: 'Prompt', sans-serif;

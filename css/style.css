@@ -1193,33 +1193,42 @@ p.end {
 
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (min-width: 320px) and (max-width: 480px) {
 
   nav {
     height: auto;
   }
   div.bran {
-    padding-left: 20px;
+    padding-left: 5px;
   }
   .bran-name {
     grid-area: 1 / 2 / 2 / 4;
-    padding-left: 20px;
   }
   ul.menu-bar {
     grid-area: 2 / 1 / 3 / 4;
-    padding-left: 20px;
   }
 
   form h1 {
-    font-size: 18px;
+    font-size: 16px;
   }
   .overlay input[type=text] {
     padding: 10px;
-    width: 80%;
+    width: 70%;
   }
   .overlay button {
-    width: 20%;
+    width: 30%;
     padding: 10px;
+  }
+  i.fa.fa-universal-access {
+    font-size: 20px;
+    padding: 5px;
+    top: 15%;
+    
+  }
+  i.fa.fa-link {
+    font-size: 20px;
+    padding: 6px;
+    top: 30%;
   }
 
   .mySlides img {
@@ -1238,16 +1247,16 @@ p.end {
 
   hr.content {
     width: 18%;
-    margin-top: 14%;
-    border-top: 5px solid #682d2f;
+    margin-top: 60px;
+    border-top: 4px solid #682d2f;
   }
   .content-heading h1 {
-    font-size: 54px;
+    font-size: 48px;
   }
   .content-heading span {
     margin: 0;
-    font-size: 18px;
-    padding-top: 20px;
+    font-size: 16px;
+    padding-top: 18px;
   }
   .content-heading p {
     font-size: 10px;
@@ -1258,7 +1267,7 @@ p.end {
     grid-template-columns: 1fr 1fr 1fr;
   }
   .grid-menu a {
-    font-size: 13px;
+    font-size: 10px;
   }
 
   .grid-content {
@@ -1293,7 +1302,7 @@ p.end {
     width: 90%;
   }
   .list-menu a {
-    font-size: 14px;
+    font-size: 12px;
   }
   .date-item h1 {
     font-size: 26px;
@@ -1312,7 +1321,7 @@ p.end {
     font-size: 12px;
   }
   .icon-item p {
-    font-size: 12px;
+    font-size: 10px;
     padding-bottom: 5px;
   }
 
@@ -1325,17 +1334,112 @@ p.end {
     margin: 0 auto;
     margin-top: 20px;
   }
+  .block-item:nth-child(1) {
+    padding: 12px 12px 0 0;
+  }
+  .block-item:nth-child(1) p {
+    font-size: 14px;
+  }
+  .block-item:nth-child(1) h3 {
+    font-size: 16px;
+  }
+  .block-item:nth-child(1) h1 {
+    font-size: 42px;
+  }
+  .block-item:nth-child(1) h4 {
+    font-size: 16px;
+  }
+  i.fa.fa-linode {
+    font-size: 40px;
+  }
+  .block-item:nth-child(2) {
+    padding: 50px 12px 0 0;
+  }
+  .block-item:nth-child(2) p {
+    font-size: 14px;
+  }
+  .block-item:nth-child(2) h3 {
+    font-size: 20px;
+  }
+  .block-item:nth-child(2) h1 {
+    font-size: 64px;
+  }
+  .block-item:nth-child(2) h4 {
+    font-size: 16px;
+  }
+  i.fa.fa-bookmark-o {
+    font-size: 54px;
+  }
+  .block-item:nth-child(3) {
+    padding: 12px 12px 0 0;
+  }
+  .block-item:nth-child(3) p {
+    font-size: 14px;
+  }
+  .block-item:nth-child(3) h3 {
+    font-size: 16px;
+  }
+  .block-item:nth-child(3) h1 {
+    font-size: 42px;
+  }
+  .block-item:nth-child(3) h4 {
+    font-size: 16px;
+  }
+  i.fa.fa-ravelry {
+    font-size: 40px;
+  }
+
   .block-menu {
     grid-template-columns: 30% 30%;
     justify-content: center;
   }
+  .block-menu a {
+    font-size: 14px;
+  }
   .last-items {
     grid-template-columns: 1fr 1fr;
   }
+  .content-bg:nth-child(1) h1 {
+    font-size: 16px;
+  }
+  .content-bg:nth-child(1) span {
+    font-size: 12px;
+  }
+  .content-bg:nth-child(2) h1 {
+    font-size: 16px;
+  }
+  .content-bg:nth-child(2) span {
+    font-size: 12px;
+  }
+  .content-bg:nth-child(3) h1 {
+    font-size: 16px;
+  }
+  .content-bg:nth-child(3) span {
+    font-size: 12px;
+  }
+  .content-bg:nth-child(4) h1 {
+    font-size: 16px;
+  }
+  .content-bg:nth-child(4) span {
+    font-size: 12px;
+  }
+  .content-bg:nth-child(5) h1 {
+    font-size: 16px;
+  }
+  .content-bg:nth-child(5) span {
+    font-size: 12px;
+  }
+  .content-bg:nth-child(6) h1 {
+    font-size: 16px;
+  }
+  .content-bg:nth-child(6) span {
+    font-size: 12px;
+  }
+
   .link-items {
     grid-template-columns: 1fr;
-    text-align: center;
   }
+
   .footer-items {
     grid-template-columns: 1fr;
     text-align: center;
@@ -1348,12 +1452,12 @@ p.end {
     font-size: 11px;
   }
   .nb {
-    width: 60%;
+    width: 45%;
   }
   .tag {
-    width: 27%;
+    width: 30%;
     font-size: 12px;
-    left: 80%;
+    left: 75%;
     top: -4%;
   }
 }

@@ -584,7 +584,7 @@ hr.content {
 }
 .date {
   display: inline-block;
-  padding-top: 30px;
+  padding-top: 20px;
   font-size: 12px;
 }
 
@@ -866,7 +866,7 @@ i.fa.fa-ravelry {
 }
 .video h1 {
   font-size: 16px;
-  padding: 10px 0 0 20px;
+  padding-left: 20px;
 }
 .video p {
   font-size: 13px;
@@ -1201,8 +1201,15 @@ p.end {
   .nav-grid {
     grid-template-columns: 27% 73%;
   }
-  div.bran {
+  .bran {
     padding-left: 5px;
+  }
+  .bran-name h4 {
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  .bran-name p {
+    font-size: 12px;
   }
   ul.menu-bar {
     grid-area: 2 / 1 / 3 / 3;
@@ -1249,6 +1256,49 @@ p.end {
     grid-template-columns: 1fr 1fr;
   }
 
+  .content-item:nth-child(1) h2 {
+    font-size: 30px;
+    margin: 60px 0 0 10px;
+  }
+  .content-item:nth-child(1) p {
+    font-size: 16px;
+  }
+  .content-item:nth-child(2) h2 {
+    font-size: 30px;
+    margin: 60px 0 0 10px;
+  }
+  .content-item:nth-child(2) p {
+    font-size: 16px;
+  }
+  .content-item:nth-child(3) h2 {
+    font-size: 30px;
+    margin: 60px 0 0 10px;
+  }
+  .content-item:nth-child(3) p {
+    font-size: 16px;
+  }
+  .content-item:nth-child(4) h2 {
+    font-size: 30px;
+    margin: 60px 0 0 10px;
+  }
+  .content-item:nth-child(4) p {
+    font-size: 16px;
+  }
+  .content-item:nth-child(5) h2 {
+    font-size: 30px;
+    margin: 60px 0 0 10px;
+  }
+  .content-item:nth-child(5) p {
+    font-size: 16px;
+  }
+  .content-item:nth-child(6) h2 {
+    font-size: 30px;
+    margin: 60px 0 0 10px;
+  }
+  .content-item:nth-child(6) p {
+    font-size: 16px;
+  }
+
   hr.content {
     width: 18%;
     margin-top: 60px;
@@ -1278,6 +1328,22 @@ p.end {
     grid-template-columns: 278px;
     justify-content: center;
   }
+  .news span {
+    font-size: 14px;
+  }
+  .detail h3 {
+    font-size: 14px;
+  }
+  span.date {
+    font-size: 10px;
+  }
+  p.paragraph {
+    font-size: 10px;
+  }
+  b {
+    font-size: 14px;
+  }
+
   .content-main {
     height: 300px;
     padding: 0;
@@ -1286,10 +1352,10 @@ p.end {
   }
   .content-main h1 {
     padding: 0;
-    font-size: 28px;
+    font-size: 24px;
   }
   .content-main span {
-    font-size: 18px;
+    font-size: 12px;
   }
 
   main {
@@ -1399,6 +1465,16 @@ p.end {
     left: -25%;
   }
 
+  .video h1 {
+    display: inline-block;
+    font-size: 12px;
+    padding-left: 10px;
+  }
+  .video p {
+    font-size: 10px;
+    padding: 10px 0 10px 10px;
+  }
+
   .block-menu {
     grid-template-columns: 35% 35%;
     justify-content: center;
@@ -1449,24 +1525,45 @@ p.end {
   .link-items {
     grid-template-columns: 1fr;
   }
-
+  li.list {
+    font-size: 14px;
+  }
+  li a {
+    font-size: 14px;
+  }
+  .link {
+    padding-bottom: 20px;
+  }
   .footer-items {
     grid-template-columns: 1fr;
     text-align: center;
+    margin: 0;
   }
   .contact-item {
     margin-bottom: 20px;
   }
+  .contact-item:nth-child(1) h1 {
+    font-size: 16px;
+  }
+  .contact-item:nth-child(1) span {
+    font-size: 10px;
+  }
 
   p.end {
-    font-size: 11px;
+    font-size: 10px;
   }
   .nb {
     width: 60%;
   }
-  .tag {
-    width: 40%;
+  .nb h1 {
+    font-size: 26px;
+  }
+  .nb p {
     font-size: 12px;
+  }
+  .tag {
+    width: 35%;
+    font-size: 10px;
     left: 75%;
     top: -4%;
   }

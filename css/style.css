@@ -1211,6 +1211,7 @@ p.end {
     margin-left: 20px;
   }
 
+
   form h1 {
     font-size: 16px;
   }
@@ -1305,26 +1306,29 @@ p.end {
     width: 90%;
   }
   .list-menu a {
-    font-size: 12px;
+    font-size: 10px;
   }
   .date-item h1 {
     font-size: 26px;
-    margin-top: 10px;
+    margin-top: 8px;
   }
   .date-item p {
-    font-size: 14px;
+    font-size: 12px;
   }
   .contents-item {
     padding: 5px;
   }
   .contents-item h5 {
-    font-size: 14px;
+    font-size: 10px;
   }
   .contents-item p {
-    font-size: 12px;
+    font-size: 10px;
+  }
+  .icon-item h6 {
+    font-size: 8px;
   }
   .icon-item p {
-    font-size: 10px;
+    font-size: 8px;
     padding-bottom: 5px;
   }
 
@@ -1353,7 +1357,8 @@ p.end {
     font-size: 16px;
   }
   i.fa.fa-linode {
-    font-size: 40px;
+    font-size: 32px;
+    left: -15%;
   }
   .block-item:nth-child(2) {
     padding: 50px 12px 0 0;
@@ -1371,7 +1376,8 @@ p.end {
     font-size: 16px;
   }
   i.fa.fa-bookmark-o {
-    font-size: 54px;
+    font-size: 36px;
+    left: -15%;
   }
   .block-item:nth-child(3) {
     padding: 12px 12px 0 0;
@@ -1389,54 +1395,55 @@ p.end {
     font-size: 16px;
   }
   i.fa.fa-ravelry {
-    font-size: 40px;
+    font-size: 32px;
+    left: -25%;
   }
 
   .block-menu {
-    grid-template-columns: 30% 30%;
+    grid-template-columns: 35% 35%;
     justify-content: center;
   }
   .block-menu a {
-    font-size: 14px;
+    font-size: 12px;
   }
   .last-items {
     grid-template-columns: 1fr 1fr;
   }
   .content-bg:nth-child(1) h1 {
-    font-size: 16px;
+    font-size: 14px;
   }
   .content-bg:nth-child(1) span {
-    font-size: 12px;
+    font-size: 10px;
   }
   .content-bg:nth-child(2) h1 {
-    font-size: 16px;
+    font-size: 14px;
   }
   .content-bg:nth-child(2) span {
-    font-size: 12px;
+    font-size: 10px;
   }
   .content-bg:nth-child(3) h1 {
-    font-size: 16px;
+    font-size: 14px;
   }
   .content-bg:nth-child(3) span {
-    font-size: 12px;
+    font-size: 10px;
   }
   .content-bg:nth-child(4) h1 {
-    font-size: 16px;
+    font-size: 14px;
   }
   .content-bg:nth-child(4) span {
-    font-size: 12px;
+    font-size: 10px;
   }
   .content-bg:nth-child(5) h1 {
-    font-size: 16px;
+    font-size: 14px;
   }
   .content-bg:nth-child(5) span {
-    font-size: 12px;
+    font-size: 10px;
   }
   .content-bg:nth-child(6) h1 {
-    font-size: 16px;
+    font-size: 14px;
   }
   .content-bg:nth-child(6) span {
-    font-size: 12px;
+    font-size: 10px;
   }
 
   .link-items {
@@ -1455,10 +1462,10 @@ p.end {
     font-size: 11px;
   }
   .nb {
-    width: 45%;
+    width: 60%;
   }
   .tag {
-    width: 30%;
+    width: 40%;
     font-size: 12px;
     left: 75%;
     top: -4%;

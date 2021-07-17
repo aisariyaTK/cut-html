@@ -681,7 +681,7 @@ aside {
   height: auto;
 }
 .list-menu {
-  width: 70%;
+  width: 75%;
   height: auto;
   margin-left: 100px;
 }
@@ -694,6 +694,7 @@ aside {
 .link-menu a {
   font-family: 'Prompt', sans-serif;
   text-decoration: none;
+  font-size: 15px;
   color: #000;
   padding: 16px 0;
   text-align: center;
@@ -716,7 +717,7 @@ aside {
   text-align: center;
 }
 .date-item h1 {
-  font-size: 48px;
+  font-size: 40px;
 }
 .date-item p {
   font-family: 'Prompt', sans-serif;
@@ -726,7 +727,7 @@ aside {
   padding: 15px;
 }
 .contents-item h5 {
-  font-size: 18px;
+  font-size: 16px;
 }
 .contents-item p {
   font-size: 14px;
@@ -749,6 +750,7 @@ aside {
 .icon-item p {
   margin-top: 3px;
   color: #ffd000;
+  font-size: 14px;
 }
 
 .block-items:hover {
@@ -1189,14 +1191,158 @@ p.end {
   padding-bottom: 10px;
   color: #fff;
 }
+@media only screen and (max-width: 1200px) {
 
-@media only screen and (max-width: 800px) {
+  nav {
+    width: 100%;
+    height: auto;
+  }
 
-  
+  .bran img {
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+  .bran-name {
+    margin-top: 30px;
+    margin-left: 10px;
+  }
+  .menu-bar {
+    margin-top: 30px;
+  }
+  .mySlides img {
+    height: 600px;
+  }
+  .grid-content {
+    grid-template-columns: 278px 278px;
+    grid-gap: 20px;
+    justify-content: center;
+  }
+  .content-main {
+    height: 600px;
+  }
+  .list-menu {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+  .block {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  .last-items {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 
 }
+@media only screen and (max-width: 992px) {
 
-@media only screen and (min-width: 481px) and (max-width: 768px) {
+  nav {
+    width: 100%;
+    height: auto;
+  }
+
+  .bran img {
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+  .bran-name {
+    margin-top: 30px;
+    margin-left: 10px;
+  }
+  .mySlides img {
+    width: 100%;
+    height: 500px;
+  }
+  .fa.fa-universal-access {
+    top: 30%;
+    padding: 10px;
+  }
+  .fa.fa-link {
+    top: 40.5%;
+    padding: 11px;
+  }
+  .content-item:nth-child(1) h2 {
+    margin-top: 38px;
+  }
+  .content-item:nth-child(2) h2 {
+    margin-top: 38px;
+  }
+  .content-item:nth-child(3) h2 {
+    margin-top: 38px;
+  }
+  .content-item:nth-child(4) h2 {
+    margin-top: 38px;
+  }
+  .content-item:nth-child(5) h2 {
+    margin-top: 38px;
+  }
+  .content-item:nth-child(6) h2 {
+    margin-top: 38px;
+  }
+  hr.content {
+    max-width: 50%;
+    border: 4px solid #682d2f;
+    margin-top: 90px;
+  }
+  .content-heading h1 {
+    font-size: 100px;
+  }
+  .content-heading span {
+    font-size: 30px;
+    margin-top: 40px;
+  }
+  .content-heading p {
+    font-size: 16px;
+  }
+  .grid-menu a {
+    font-size: 14px;
+  }
+  .grid-content {
+    grid-template-columns: 278px 278px;
+    justify-content: center;
+    grid-gap: 30px;
+  }
+  .content-main {
+    height: 500px;
+  } 
+  .content-main h1 {
+    font-size: 40px;
+  } 
+  .content-main span {
+    font-size: 28px;
+  }
+  main {
+    flex-direction: column;
+  }
+  aside {
+    width: 100%;
+    height: auto;
+  }
+  .list-menu {
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 65%;
+  }
+
+  article {
+    width: 100%;
+    height: auto;
+  }
+  .block {
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 56%;
+  }
+  .last-items {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .tag {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
   
   nav {
     width: 100%;
@@ -1206,8 +1352,16 @@ p.end {
   .nav-grid {
     grid-template-columns: 1fr;
     text-align: center;
+    margin: 0 auto;
   }
-
+  .bran img {
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+  .bran-name {
+    margin: 0 auto;
+    margin-top: 10px;
+  }
   a.dropbtn {
     padding: 14px 10px;
   }
@@ -1281,7 +1435,7 @@ p.end {
 
   hr.content {
     margin-top: 70px;
-    width: 15%;
+    width: 30%;
     border-top: 4px solid #682d2f;
   }
   .content-heading h1 {
@@ -1292,7 +1446,7 @@ p.end {
     margin-top: 28px;
   }
   .content-heading p {
-    font-size: 12px
+    font-size: 10px
   }
   .grid-menu {
     grid-template-columns: 1fr 1fr 1fr;
@@ -1461,7 +1615,7 @@ p.end {
   }
 }
 
-@media only screen and (min-width: 481px) and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
 
   .grid-content {
     grid-template-columns: 278px;
@@ -1524,7 +1678,7 @@ p.end {
 
 
 
-@media only screen and (min-width: 320px) and (max-width: 480px){
+@media only screen and (max-width: 480px){
 
   nav {
     height: auto;
@@ -1539,6 +1693,9 @@ p.end {
   }
   .bran-name {
     grid-area: 1 / 2 / 2 / 4;
+    text-align: left;
+    margin: 0;
+    margin-top: 15px;
   }
   .bran-name h4 {
     font-size: 14px;

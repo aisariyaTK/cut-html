@@ -78,7 +78,7 @@ li a.link, .dropbtn {
   display: inline-block;
   color: #232323;
   text-align: center;
-  padding: 14px 12px;
+  padding: 14px 14px;
   text-decoration: none;
 }
 
@@ -1222,8 +1222,17 @@ p.end {
     margin: 0;
     text-align: center;
   }
-  .dropbtn img {
-    margin-left: 20px;
+  .mySlides:nth-child(1) img {
+    height: 250px;
+  }
+  .mySlides:nth-child(2) img {
+    height: 250px;
+  }
+  .mySlides:nth-child(3) img {
+    height: 250px;
+  }
+  .mySlides:nth-child(4) img {
+    height: 250px;
   }
 
 

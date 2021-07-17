@@ -119,6 +119,8 @@ li.dropdown {
 .dropbtn img {
   position: relative;
   top: -4px;
+  float: left;
+  margin-right: 5px;
 }
 .dropbtn span {
   position: absolute;

@@ -42,7 +42,7 @@ nav {
 
 .nav-grid {
   display: grid;
-  grid-template-columns: 85px 320px 1fr;
+  grid-template-columns: 85px 285px 1fr;
 }
 .bran img {
   margin-top: 7px;
@@ -149,7 +149,6 @@ li.dropdown {
   padding: 10px 15px;
   font-size: 20px;
   cursor: pointer;
-  margin-left: 70px;
 }
 
 .openBtn:hover {

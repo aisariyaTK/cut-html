@@ -84,30 +84,28 @@
           <li><a href="#" class="link">ติดต่อสื่อสาร</a></li>
           <li class="dropdown">
             <a href="javascript:void(0)" class="dropbtn">
-              <img src="img/thai.png" width="32" height="28" alt=""> 
-              <span>ภาษาไทย <i class="fa fa-angle-down" aria-hidden="true"></i></span>               
+              <img src="img/thai.png" width="32" height="28" alt=""> ภาษาไทย <i class="fa fa-angle-down" aria-hidden="true"></i>           
             </a>
             <div class="dropdown-content">
               <a href="#"><img src="img/thai.png" width="32" height="28" alt=""> <span>ภาษาไทย</span> </a>
               <a href="#"><img src="img/eng.png" width="32" height="28" alt=""> <span>ภาษาอังกฤษ</span> </a>
             </div>
           </li>
-          <div id="myOverlay" class="overlay">
-            <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
-            <div class="overlay-content">
-              <form>
-                <h1>คุณกำลังมองหาอะไร</h1>
-                <input type="text" placeholder="ค้นหา.." name="search" required>
-                <button type="submit"><i class="fa fa-search"></i></button>
-              </form>
-            </div>
-          </div>
-          <button class="openBtn" onclick="openSearch()"><i class="fa fa-search" aria-hidden="true"></i></button>
+          <li class="openBtn" onclick="openSearch()"><i class="fa fa-search" aria-hidden="true"></i></li>
         </ul>
       </div>
     </div>
   </nav>
-
+  <div id="myOverlay" class="overlay">
+    <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+    <div class="overlay-content">
+      <form>
+        <h1>คุณกำลังมองหาอะไร</h1>
+        <input type="text" placeholder="ค้นหา.." name="search" required>
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+    </div>
+  </div>
 
   <section class="content">
     <div class="slideshow-container">

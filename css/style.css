@@ -1399,11 +1399,11 @@ p.end {
 
   .video h1 {
     display: inline-block;
-    font-size: 12px;
+    font-size: 16px;
     padding-left: 10px;
   }
   .video p {
-    font-size: 10px;
+    font-size: 14px;
     padding: 10px 0 10px 10px;
   }
   .block-menu {
